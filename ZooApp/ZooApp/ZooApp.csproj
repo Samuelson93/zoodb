@@ -110,13 +110,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Views\addEspecies.html" />
+    <Content Include="Views\Especies.html" />
+    <Content Include="Views\js\Especies.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ClasificacionController.cs" />
+    <Compile Include="Controllers\EspeciesController.cs" />
+    <Compile Include="Controllers\TipoAnimalController.cs" />
+    <Compile Include="Db\Db.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Clasificacion.cs" />
+    <Compile Include="Models\Especie.cs" />
+    <Compile Include="Models\RespuestaAPI.cs" />
+    <Compile Include="Models\TipoAnimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,8 +144,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

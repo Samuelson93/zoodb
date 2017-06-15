@@ -5,14 +5,14 @@ using System.Web;
 
 namespace ZooApp
 {
-    public class Especies
+    public class Especie
     {
         public long idEspecie { get; set; }
         public string nombre { get; set; }
-        public short nPlazas { get; set; }
+        public short nPatas { get; set; }
         public bool esMascota { get; set; }
-        public Clasificacion Clasificacion { get; set; }
-        public  TipoAnimal TipoAnimal { get; set; }
+        public Clasificacion clasificacion { get; set; }
+        public  TipoAnimal tipoAnimal { get; set; }
 
     }
 
